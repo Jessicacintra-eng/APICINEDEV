@@ -18,9 +18,9 @@ app.use((req,res,next)=>{
     next();
 });
 
-import {bd} from './infra/bdSQLite-filmes.js'
-import {filmes} from './controllers/filmes-controller.js'
-filmes(app, bd);
+// import {bd} from './infra/bdSQLite-filmes.js'
+// import {filmes} from './controllers/filmes-controller.js'
+// filmes(app, bd);
 
 import {bdSQLite} from './infra/bdSQLite-clientes.js'
 import {cliente} from './controllers/clientes-controller.js'
