@@ -3,7 +3,7 @@
 import  Express  from "express"
 import cors from'cors'
 
-const port = process.env.PORTA||3000
+const port = 3000
 
 const app = Express();
 
@@ -39,7 +39,7 @@ import {bdS} from './infra/bdSQLite-series.js'
 import {series} from './controllers/series-controller.js' 
 series(app, bdS)
 
-app.listen(port,(port)=>{
+app.listen(port,()=>{
   console.log("Porta funcionando")
 })
 

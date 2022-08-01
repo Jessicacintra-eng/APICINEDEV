@@ -20,8 +20,8 @@
   },
   "contributors": [],
   "scripts": {
-    "start": "node ./src/index.js",
-    "start dev": "nodemon ./src/index.js",
+    "start": "npm install && node ./src/index.js",
+    "dev": "nodemon ./src/index.js",
     "test": "jest"
   },
   "engines":{
