@@ -15,7 +15,9 @@ const corsConfig={
 app.use(cors(corsConfig))
 app.use(Express.json());
 app.use((req,res,next)=>{
-    next();
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
 });
 
 // import {bd} from './infra/bdSQLite-filmes.js'
