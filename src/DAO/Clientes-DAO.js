@@ -33,7 +33,7 @@
         return new Promise((resolve, reject) =>{
             this.bd.all(`
             UPDATE CLIENTES 
-            SET name = ?, email = ?, password = ?, payment = ?, club = ? WHERE id = ?`,ClienteAtualizado,
+            SET NAME = ?, EMAIL = ?, PASSWORD = ?, PAYMENT = ?, CLUB = ? WHERE ID = ?`,ClienteAtualizado,
                 (error)=>{
                 if(error) {
                     reject(error)
